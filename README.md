@@ -26,14 +26,6 @@ Git also makes collaboration easier, allowing changes by multiple people to all 
 python-dev is the package that contains the header files for the Python C API, 
 which is used by lxml because it includes Python C extensions for high performance.
 
-install Python 2.7.X dev package
-
-    sudo apt-get install python-dev
-
-OR
-    
-install Python 3.X dev package
-
     sudo apt-get install python3-dev
 
 # STEP 3 Install setuptools and pip (Python's Package Manager).
@@ -45,14 +37,6 @@ look to the user like ordinary Python packages based on the distutils.
 pip is a package manager for Python.  It's a tool that allows you to install and manage 
 additional libraries and dependencies that are not distributed as part of the standard library.
 
-install Python 2.7.X
-
-    sudo apt-get install python-setuptools python-pip
-
-OR
-
-install Python 3.X
-
     sudo apt-get install python3-setuptools python3-pip
 
 # STEP 4 Install virtualenv
@@ -63,13 +47,7 @@ at the same time on the same machine.
     
     sudo apt-get install virtualenv
 
-# STEP 5 Create an alias for pip and python to enforce use of python 3
-
-    alias python=python3
-    alias pip=pip3
-
-
-# STEP 6 Install MariaDB 10.3 stable package
+# STEP 5 Install MariaDB 10.3 stable package
 MariaDB is developed as open source software and as a relational database it provides an SQL interface 
 for accessing data.
 
@@ -83,11 +61,11 @@ the following command
     
     sudo mysql_secure_installation
     
-# STEP 7  MySQL database development files
+# STEP 6  MySQL database development files
 
     sudo apt-get install libmysqlclient-dev
 
-# STEP 8 Edit the mariadb configuration ( unicode character encoding )
+# STEP 7 Edit the mariadb configuration ( unicode character encoding )
 
     sudo nano /etc/mysql/my.cnf
 
@@ -105,13 +83,13 @@ Now press (Ctrl-X) to exit
 
     sudo service mysql restart
 
-# STEP 9 install Redis
+# STEP 8 install Redis
 Redis is an open source (BSD licensed), in-memory data structure store, used as a database, 
 cache, and message broker.
     
     sudo apt-get install redis-server
 
-# STEP 10 install Node.js 12.X package
+# STEP 9 install Node.js 12.X package
 Node.js is an open source, cross-platform runtime environment for developing server-side and 
 networking applications. Node.js applications are written in JavaScript, and can be run within the Node.js
 runtime on OS X, Microsoft Windows, and Linux.
@@ -120,14 +98,14 @@ runtime on OS X, Microsoft Windows, and Linux.
     curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
     sudo apt-get install -y nodejs
 
-# STEP 11  install Yarn
+# STEP 10  install Yarn
 Yarn is a JavaScript package manager that aims to be speedy, deterministic, and secure. 
 See how easy it is to drop yarn in where you were using npm before, and get faster, more reliable installs.
 Yarn is a package manager for JavaScript.
     
     sudo npm install -g yarn
 
-# STEP 12 install wkhtmltopdf
+# STEP 11 install wkhtmltopdf
 Wkhtmltopdf is an open source simple and much effective command-line shell utility that enables 
 user to convert any given HTML (Web Page) to PDF document or an image (jpg, png, etc)
 
@@ -136,7 +114,7 @@ user to convert any given HTML (Web Page) to PDF document or an image (jpg, png,
     rm wkhtmltox_0.12.6-1.bionic_amd64.deb
     
 
-# STEP 13 install frappe-bench
+# STEP 12 install frappe-bench
 
     pip3 install frappe-bench
 
@@ -148,7 +126,7 @@ before next step and You must login.
 
 
 # optional step
-# STEP 14 Create a user
+# STEP  Create a user
 
     sudo adduser dcode-frappe
     sudo usermod -aG sudo dcode-frappe
