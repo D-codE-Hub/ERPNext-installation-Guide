@@ -103,7 +103,7 @@ Yarn is a JavaScript package manager that aims to be speedy, deterministic, and 
 See how easy it is to drop yarn in where you were using npm before, and get faster, more reliable installs.
 Yarn is a package manager for JavaScript.
     
-    sudo apt-get update && sudo apt-get install yarn
+    sudo npm install -g yarn
 
 # STEP 11 install wkhtmltopdf
 Wkhtmltopdf is an open source simple and much effective command-line shell utility that enables 
@@ -120,7 +120,10 @@ IMPORTANT: you may wish to log out and log back into your terminal
 before next step and You must login.
     
     bench --version
-   
+    
+# STEP 13 install frappe-bench 
+
+    bench init frappe-bench --frappe-branch version-13
 
 
 # optional step
