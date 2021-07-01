@@ -121,9 +121,21 @@ before next step and You must login.
     
     bench --version
     
-# STEP 13 install frappe-bench 
+# STEP 13 initilise the frappe bench & install frappe latest version 
 
     bench init frappe-bench --frappe-branch version-13
+    
+# STEP 13 create a site in frappe bench 
+    
+    bench new-site dcode.com
+
+# STEP 13 install ERPNext latest version in bench & site
+
+    bench get-app erpnext --branch version-13
+    bench --site dcod install-app erpnext
+
+
+      
 
 
 # optional step
