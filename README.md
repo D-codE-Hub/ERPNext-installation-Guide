@@ -95,7 +95,7 @@ networking applications. Node.js applications are written in JavaScript, and can
 runtime on OS X, Microsoft Windows, and Linux.
 
     sudo apt-get install curl
-    curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+    curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
     sudo apt-get install -y nodejs
 
 # STEP 10  install Yarn
@@ -103,15 +103,13 @@ Yarn is a JavaScript package manager that aims to be speedy, deterministic, and 
 See how easy it is to drop yarn in where you were using npm before, and get faster, more reliable installs.
 Yarn is a package manager for JavaScript.
     
-    sudo npm install -g yarn
+    sudo apt-get update && sudo apt-get install yarn
 
 # STEP 11 install wkhtmltopdf
 Wkhtmltopdf is an open source simple and much effective command-line shell utility that enables 
 user to convert any given HTML (Web Page) to PDF document or an image (jpg, png, etc)
 
-    wget https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6-1/wkhtmltox_0.12.6-1.bionic_amd64.deb
-    sudo apt install ./wkhtmltox_0.12.6-1.bionic_amd64.deb
-    rm wkhtmltox_0.12.6-1.bionic_amd64.deb
+    sudo apt-get install xvfb libfontconfig wkhtmltopdf
     
 
 # STEP 12 install frappe-bench
