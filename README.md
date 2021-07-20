@@ -1,7 +1,7 @@
 # ERPNext-installation-Guide
 ## The complete guide to install ERPNext in your Ubuntu system
 
-# Pre-requisites 
+### Pre-requisites 
 
       Python 3.6+
       Node.js 14+
