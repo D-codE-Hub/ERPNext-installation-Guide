@@ -54,7 +54,16 @@ for accessing data.
 open this link
 
     https://downloads.mariadb.org/mariadb/repositories/#mirror=piconets
-
+ 
+For ubuntu 20.04
+     sudo apt-get install software-properties-common
+     sudo apt-key adv --fetch-keys 'https://mariadb.org/mariadb_release_signing_key.asc'
+     sudo add-apt-repository 'deb [arch=amd64,arm64,ppc64el] https://ftp.icm.edu.pl/pub/unix/database/mariadb/repo/10.3/ubuntu focal main'
+     sudo apt update
+     sudo apt install mariadb-server
+     
+     
+     
 IMPORTANT :During this installation you'll be prompted to set the MySQL root password.
 If you are not prompted for the same You can initialize the MySQL server setup by executing 
 the following command
@@ -114,7 +123,7 @@ user to convert any given HTML (Web Page) to PDF document or an image (jpg, png,
 
 # STEP 12 install frappe-bench
 
-    pip3 install frappe-bench
+   sudo -H pip3 install frappe-bench
 
 IMPORTANT: you may wish to log out and log back into your terminal 
 before next step and You must login.
@@ -132,7 +141,7 @@ before next step and You must login.
 # STEP 13 install ERPNext latest version in bench & site
 
     bench get-app erpnext --branch version-13
-    bench --site dcod install-app erpnext
+    bench --site dcode.com install-app erpnext
 
 
       
