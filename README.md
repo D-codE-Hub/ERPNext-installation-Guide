@@ -1,5 +1,5 @@
 # ERPNext-installation-Guide
-# The complete guide to install ERPNext in your Ubuntu system
+## The complete guide to install ERPNext in your Ubuntu system
 
 # Pre-requisites 
 
@@ -135,11 +135,11 @@ before next step and You must login.
 
     bench init frappe-bench --frappe-branch version-13
     
-# STEP 13 create a site in frappe bench 
+# STEP 14 create a site in frappe bench 
     
     bench new-site dcode.com
 
-# STEP 13 install ERPNext latest version in bench & site
+# STEP 15 install ERPNext latest version in bench & site
 
     bench get-app erpnext --branch version-13
     bench --site dcode.com install-app erpnext
@@ -148,8 +148,8 @@ before next step and You must login.
       
 
 
-# optional step
-# STEP  Create a user
+# Optional step
+# STEP 16  Create a user
 
     sudo adduser dcode-frappe
     sudo usermod -aG sudo dcode-frappe
