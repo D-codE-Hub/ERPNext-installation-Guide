@@ -124,7 +124,7 @@ user to convert any given HTML (Web Page) to PDF document or an image (jpg, png,
 
 # STEP 12 install frappe-bench
 
-   sudo -H pip3 install frappe-bench
+    sudo -H pip3 install frappe-bench
 
 IMPORTANT: you may wish to log out and log back into your terminal 
 before next step and You must login.
