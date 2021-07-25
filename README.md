@@ -57,11 +57,11 @@ open this link
  
 For ubuntu 20.04
 
-     sudo apt-get install software-properties-common
-     sudo apt-key adv --fetch-keys 'https://mariadb.org/mariadb_release_signing_key.asc'
-     sudo add-apt-repository 'deb [arch=amd64,arm64,ppc64el] https://ftp.icm.edu.pl/pub/unix/database/mariadb/repo/10.3/ubuntu focal main'
-     sudo apt update
-     sudo apt install mariadb-server
+    sudo apt-get install software-properties-common
+    sudo apt-key adv --fetch-keys 'https://mariadb.org/mariadb_release_signing_key.asc'
+    sudo add-apt-repository 'deb [arch=amd64,arm64,ppc64el] https://ftp.icm.edu.pl/pub/unix/database/mariadb/repo/10.3/ubuntu focal main'
+    sudo apt update
+    sudo apt install mariadb-server
      
      
      
@@ -99,7 +99,7 @@ cache, and message broker.
     
     sudo apt-get install redis-server
 
-### STEP 9 install Node.js 12.X package
+### STEP 9 install Node.js 14.X package
 Node.js is an open source, cross-platform runtime environment for developing server-side and 
 networking applications. Node.js applications are written in JavaScript, and can be run within the Node.js
 runtime on OS X, Microsoft Windows, and Linux.
@@ -137,6 +137,7 @@ before next step and You must login.
     
 ### STEP 14 create a site in frappe bench 
     
+    cd frappe-bench/
     bench new-site dcode.com
 
 ### STEP 15 install ERPNext latest version in bench & site
