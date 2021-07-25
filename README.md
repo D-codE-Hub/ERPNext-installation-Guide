@@ -121,6 +121,7 @@ user to convert any given HTML (Web Page) to PDF document or an image (jpg, png,
 
     sudo apt-get install xvfb libfontconfig wkhtmltopdf
     
+### if you have to setup production server go to Step 16 else continue 
 
 ### STEP 12 install frappe-bench
 
@@ -146,42 +147,23 @@ before next step and You must login.
     bench --site dcode.com install-app erpnext
 
 
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
 
+### Optional step for cratetind production setup
 
-### Optional step
-### STEP 16  Create a user
+### STEP 16  Create a new user
 
     sudo adduser dcode-frappe
     sudo usermod -aG sudo dcode-frappe
     su - dcode-frappe
+    
+### Follow the steps from Step 12 to Step 15
+
+### Step 17 setup production
+    
+    sudo bench setup production dcode-frappe
+    bench restart
+    
+  Open the 0.0.0.0 or server IP in web browser and login to production server
+    
+    
     
