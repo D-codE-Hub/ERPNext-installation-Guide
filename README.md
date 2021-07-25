@@ -136,18 +136,25 @@ before next step and You must login.
 
     bench init frappe-bench --frappe-branch version-13
     
+    bench start
+    
 ### STEP 14 create a site in frappe bench 
     
     cd frappe-bench/
+    
     bench new-site dcode.com
 
 ### STEP 15 install ERPNext latest version in bench & site
 
     bench get-app erpnext --branch version-13
     bench --site dcode.com install-app erpnext
+    
+    bench start
 
 
-
+#
+#
+#
 ### Optional step for cratetind production setup
 
 ### STEP 16  Create a new user
