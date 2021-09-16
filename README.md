@@ -136,11 +136,10 @@ before next step and You must login.
 
     bench init frappe-bench --frappe-branch version-13
     
+    cd frappe-bench/
     bench start
     
 ### STEP 14 create a site in frappe bench 
-    
-    cd frappe-bench/
     
     bench new-site dcode.com
 
