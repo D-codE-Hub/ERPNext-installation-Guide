@@ -173,3 +173,46 @@ before next step and You must login.
     
     
     
+    
+  
+  #### Port cofiguration for multiple site
+  
+  
+      bench use sitename
+  
+ 
+
+    Switch off DNS based multitenancy (once)
+
+      bench config dns_multitenant off
+
+    Create a new site
+
+      bench new-site site2name
+
+    Set port
+
+       bench set-nginx-port site2name 82
+
+    Re generate nginx config
+
+       bench setup nginx
+
+    Reload nginx
+
+      sudo service nginx reload
+      
+
+    Reload supervisor
+      sudo service supervisor restart
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
