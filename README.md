@@ -146,6 +146,9 @@ before next step and You must login.
 ### STEP 15 install ERPNext latest version in bench & site
 
     bench get-app erpnext --branch version-13
+    ###OR
+    bench get-app https://github.com/frappe/erpnext --branch version-13
+
     bench --site dcode.com install-app erpnext
     
     bench start
