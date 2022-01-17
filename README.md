@@ -209,7 +209,11 @@ before next step and You must login.
     Reload supervisor
       sudo service supervisor restart
     
-
+####others
+      sudo add-apt-repository ppa:certbot/certbot
+      sudo apt update
+      sudo apt install python-certbot-nginx
+      sudo certbot --nginx -d example.com
     
     
     
