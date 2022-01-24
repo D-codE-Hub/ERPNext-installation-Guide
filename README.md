@@ -215,6 +215,8 @@ before next step and You must login.
       sudo apt update
       sudo apt install python-certbot-nginx
       sudo certbot --nginx -d example.com
+      
+      ./env/bin/python -m pip install -q -U -e /apps/frappe
     
     
     
