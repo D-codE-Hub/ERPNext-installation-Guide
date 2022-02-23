@@ -62,8 +62,13 @@ For ubuntu 20.04
     sudo add-apt-repository 'deb [arch=amd64,arm64,ppc64el] https://ftp.icm.edu.pl/pub/unix/database/mariadb/repo/10.3/ubuntu focal main'
     sudo apt update
     sudo apt install mariadb-server
-     
-     
+    
+ For ubuntu 18.04
+    sudo apt-get install software-properties-common dirmngr apt-transport-https
+    sudo apt-key adv --fetch-keys 'https://mariadb.org/mariadb_release_signing_key.asc'
+    sudo add-apt-repository 'deb [arch=amd64,arm64,ppc64el] https://mirrors.aliyun.com/mariadb/repo/10.3/ubuntu bionic main'
+    sudo apt update
+    sudo apt install mariadb-server
      
 IMPORTANT :During this installation you'll be prompted to set the MySQL root password.
 If you are not prompted for the same You can initialize the MySQL server setup by executing 
