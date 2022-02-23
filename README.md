@@ -64,6 +64,7 @@ For ubuntu 20.04
     sudo apt install mariadb-server
     
  For ubuntu 18.04
+ 
     sudo apt-get install software-properties-common dirmngr apt-transport-https
     sudo apt-key adv --fetch-keys 'https://mariadb.org/mariadb_release_signing_key.asc'
     sudo add-apt-repository 'deb [arch=amd64,arm64,ppc64el] https://mirrors.aliyun.com/mariadb/repo/10.3/ubuntu bionic main'
